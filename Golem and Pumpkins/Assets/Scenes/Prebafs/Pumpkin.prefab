@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 4006034547772112}
   - component: {fileID: 54778509749901998}
   - component: {fileID: 135521413171003760}
+  - component: {fileID: 114453187763151290}
   m_Layer: 0
   m_Name: Pumpkin
   m_TagString: Untagged
@@ -203,6 +204,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114453187763151290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435353304641076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f517c4d2f647c484997e85b273380e15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!135 &135521413171003760
 SphereCollider:
   m_ObjectHideFlags: 1
