@@ -110,7 +110,7 @@ public class PlayerMove : MonoBehaviour {
             player_Move = transform.forward * moveSpeed * Time.deltaTime;
 
             // if player has reached the target
-            if (Vector3.Distance(transform.position, target_Pos) <= 0.5f)
+            if (Vector3.Distance(transform.position, target_Pos) <= 0.2f)
             {
                 canMove = false; // to stop moving the player
             }

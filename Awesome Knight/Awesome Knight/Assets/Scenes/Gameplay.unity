@@ -231,6 +231,8 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
+  - component: {fileID: 534669907}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -291,13 +293,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0.07192058, y: 0.92070615, z: -0.32497388, w: 0.20376378}
+  m_LocalRotation: {x: 0.0726153, y: 0.92360973, z: -0.30599132, w: 0.21918334}
   m_LocalPosition: {x: -2.6442575, y: 7.2136664, z: -17.81057}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 36.66, y: 153.3, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f17466a7f18bee34ba64207d37e9784d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  follow_Height: 8
+  follow_Distance: 6
+--- !u!114 &534669907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c41c904ccf2fe4a81ccbed9edf2ed1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorTexture: {fileID: 2800000, guid: 2dfbe39381e6d8640b7481807d129c44, type: 3}
+  mousePoint: {fileID: 1810249182035802, guid: b51d0297c8816fd42b55bfe520406291, type: 2}
 --- !u!1001 &849077221
 Prefab:
   m_ObjectHideFlags: 0
@@ -337,11 +365,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 95811280680959110, guid: 39e514f2afc26b84fa1228cff0db147e,
-        type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 9f445b1997092a24a8c682ce5ee610f4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e514f2afc26b84fa1228cff0db147e, type: 2}
   m_IsPrefabAsset: 0
