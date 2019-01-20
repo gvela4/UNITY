@@ -256,7 +256,7 @@ Light:
   serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -1107,6 +1107,22 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 632479426}
   m_CullTransparentMesh: 0
+--- !u!1 &671506151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1578348921048756, guid: 39e514f2afc26b84fa1228cff0db147e,
+    type: 2}
+  m_PrefabInternal: {fileID: 849077221}
+--- !u!114 &671506152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 671506151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee30b87a5783e8149a56974c70f34298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &679545999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,6 +1517,36 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114785402892271960, guid: 39e514f2afc26b84fa1228cff0db147e,
+        type: 2}
+      propertyPath: fillWaitImage_1
+      value: 
+      objectReference: {fileID: 401930308}
+    - target: {fileID: 114785402892271960, guid: 39e514f2afc26b84fa1228cff0db147e,
+        type: 2}
+      propertyPath: fillWaitImage_2
+      value: 
+      objectReference: {fileID: 1164458564}
+    - target: {fileID: 114785402892271960, guid: 39e514f2afc26b84fa1228cff0db147e,
+        type: 2}
+      propertyPath: fillWaitImage_3
+      value: 
+      objectReference: {fileID: 1045136153}
+    - target: {fileID: 114785402892271960, guid: 39e514f2afc26b84fa1228cff0db147e,
+        type: 2}
+      propertyPath: fillWaitImage_4
+      value: 
+      objectReference: {fileID: 632479428}
+    - target: {fileID: 114785402892271960, guid: 39e514f2afc26b84fa1228cff0db147e,
+        type: 2}
+      propertyPath: fillWaitImage_5
+      value: 
+      objectReference: {fileID: 383741781}
+    - target: {fileID: 114785402892271960, guid: 39e514f2afc26b84fa1228cff0db147e,
+        type: 2}
+      propertyPath: fillWaitImage_6
+      value: 
+      objectReference: {fileID: 1803308731}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e514f2afc26b84fa1228cff0db147e, type: 2}
   m_IsPrefabAsset: 0
