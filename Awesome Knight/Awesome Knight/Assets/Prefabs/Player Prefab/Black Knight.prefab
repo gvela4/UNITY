@@ -342,6 +342,7 @@ GameObject:
   - component: {fileID: 114133052933253970}
   - component: {fileID: 114785402892271960}
   - component: {fileID: 114945047884400470}
+  - component: {fileID: 114449673537906092}
   m_Layer: 0
   m_Name: Black Knight
   m_TagString: Player
@@ -833,7 +834,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1671246651408258}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.35}
+  m_LocalPosition: {x: 0, y: -1.5, z: -0.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4316304931804490}
@@ -2220,6 +2221,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78a5b28a9aa7cea44abcdcadd0b6a403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114449673537906092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1578348921048756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f5ccd4b106f554fb3fd626cc43a247, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114785402892271960
