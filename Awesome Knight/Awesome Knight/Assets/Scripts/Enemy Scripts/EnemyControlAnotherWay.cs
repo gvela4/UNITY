@@ -17,16 +17,38 @@ public class EnemyControlAnotherWay : MonoBehaviour
     private float waitAttackTime = 1f;
     private Vector3 nextDestination;
 
-	// Use this for initialization
-	void Awake ()
+    private EnemyHealth enemyHealth;
+
+    // Use this for initialization
+    void Awake ()
     {
         playerTarget = GameObject.FindGameObjectWithTag("Player").transform;
         anim = GetComponent<Animator>();
         navAgent = GetComponent<NavMeshAgent>();
+
+        enemyHealth = GetComponent<EnemyHealth>();
+
+    }
+
+    // Update is called once per frame
+    void Update ()
+    {
+        if (enemyHealth.health > 0)
+        {
+            MoveAndAttack();
+        }
+        else
+        {
+            anim.SetBool("Death", true);
+            navAgent.enabled = false;
+            if (!anim.IsInTransition(0) && anim.GetCurrentAnimatorStateInfo(0).IsName("Death") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f)
+            {
+                Destroy(gameObject, 2f);
+            }
+        }
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    void MoveAndAttack()
     {
         // distance from our own enemy to the player
         float distance = Vector3.Distance(transform.position, playerTarget.position);
@@ -88,5 +110,5 @@ public class EnemyControlAnotherWay : MonoBehaviour
                 }
             }
         }
-	}
+    }
 }

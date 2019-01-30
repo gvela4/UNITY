@@ -43,6 +43,7 @@ public class EnemyControl : MonoBehaviour
     private NavMeshAgent navAgent;
     private Vector3 whereTo_Navigate;
 
+    private EnemyHealth enemyHealth;
     // health script
 
     // Use this for initialization
@@ -55,11 +56,18 @@ public class EnemyControl : MonoBehaviour
 
         initialPositon = transform.position;
         whereTo_Navigate = transform.position;
-	}
+
+        enemyHealth = GetComponent<EnemyHealth>();
+
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
+        if (enemyHealth.health <= 0f)
+        {
+            enemy_CurrentState = EnemyState.DEATH;
+        }
         // IF HEALTH IS <= 0 THEN SET STATE TO DEATH
         if (enemy_CurrentState != EnemyState.DEATH)
         {

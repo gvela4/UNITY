@@ -8,9 +8,11 @@ public class HealScript : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>().health += healAmount;
-        print("Player health is :" + 
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>().health);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>().HealPlayer(healAmount);
+        //print("Player health is :" + 
+           // GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>().health);
+
+
 	}
 	
 
