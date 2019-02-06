@@ -61,7 +61,12 @@ ModelImporter:
     7400026: land
     9500000: //RootNode
     13700000: 1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Golem
+    second: {fileID: 2100000, guid: e86f826bcbcfa174abe274c6c621cf8e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -100,7 +105,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

@@ -31839,6 +31839,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1648235677680930, guid: 4ecb48fb06051834b972878ff2a143ac, type: 2}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ecb48fb06051834b972878ff2a143ac, type: 2}
   m_IsPrefabAsset: 0
@@ -48661,7 +48665,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1984239434}
   m_LocalRotation: {x: 0.00072579016, y: 0.951377, z: -0.30801997, w: 0.002241738}
-  m_LocalPosition: {x: -0.2, y: 6.45, z: 10.3}
+  m_LocalPosition: {x: -0.2, y: 6.45, z: 8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -49556,9 +49560,9 @@ GameObject:
   - component: {fileID: 2007948692}
   - component: {fileID: 2007948691}
   - component: {fileID: 2007948690}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Terrain
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
