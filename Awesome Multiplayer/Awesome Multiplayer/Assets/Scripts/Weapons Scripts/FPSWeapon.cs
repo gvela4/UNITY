@@ -1,0 +1,27 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FPSWeapon : MonoBehaviour
+{
+    private GameObject muzzleFlash;
+
+	// Use this for initialization
+	void Start ()
+    {
+        // will find children muzzle flash inside parent
+        muzzleFlash = transform.Find("Muzzle Flash").gameObject;
+        muzzleFlash.SetActive(false);
+    }
+
+    public void Shoot()
+    {
+        StartCoroutine(TurnOnMuzzleFlash());
+    }
+    IEnumerator TurnOnMuzzleFlash()
+    {
+        muzzleFlash.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
+        muzzleFlash.SetActive(false);
+    }
+}
